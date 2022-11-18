@@ -13,18 +13,6 @@ class Form extends Component<{} , Props> {
     ]
   }
 
-
-  //
-  //
-  // const changeMovieName = (event:React.ChangeEvent<HTMLInputElement>, id:string) => {
-  //   setMovie(prev => prev.map(film => {
-  //     return film.id === id ? {
-  //       ...film,
-  //       title:event.target.value,
-  //     } : film;
-  //   }));
-  // };
-
   onMovieName = (e:React.ChangeEvent<HTMLInputElement>)=> {
     this.setState(prev => ({
       ...prev,
@@ -37,7 +25,6 @@ class Form extends Component<{} , Props> {
   movieAddFormSubmit = (e:React.FormEvent) => {
     e.preventDefault();
     // this.setState()
-
     };
 
 
